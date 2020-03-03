@@ -11,7 +11,7 @@ export default function App() {
       <Text>{name}</Text>
       <Image style={styles.logo} source={require('./assets/user.png')}/>
       <TextInput maxLength={10}  style={styles.textInput} placeholder="Usuario" onChangeText={(text) => setName(text)} />
-      <Button style={styles.button} tittle="Start" onPress={saludo}></Button> 
+      <Button title="Start" onPress={saludo}></Button> 
     </View>
   );
 }
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     borderColor:'#000000',
     borderWidth: 2,
     borderRadius: 10,
-    padding: 20,
+    padding: 10,
     width: 220,
     textAlign: 'center'
   }
